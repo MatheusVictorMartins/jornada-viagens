@@ -9,3 +9,7 @@ a.logo {
 	width: 68px;
 	height: 64px;
 }
+
+div.main-area {
+	padding-inline: 48px;
+}
