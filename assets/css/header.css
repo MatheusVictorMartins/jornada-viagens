@@ -40,4 +40,28 @@ input.menu-open-input:checked ~ nav.menu-navbar {
 .list-links li a {
 	text-decoration: none;
 	color: var(--text-secondary-color);
+	font-weight: var(--navbar-text-font-weight);
+	font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.manu-area {
+		margin-top: 0;
+	}
+	.menu-area label {
+		display: none;
+	}
+	nav.menu-navbar {
+		display: block;
+	}
+	ul.list-links {
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 467px;
+	}
+	ul.list-links li {
+		margin: 0;
+	}
 }
