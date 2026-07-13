@@ -34,10 +34,38 @@
 
 body {
 	font-family: "Montserrat";
+	color: var(--text-primary-color);
 }
 
 h1 {
 	font-family: "Montserrat";
 	font-weight: var(--title-text-font-weight);
 	color: var(--button-primary-color);
+}
+
+.section-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.section-title h2 {
+	font-size: 28px;
+	font-weight: var(--title-text-font-weight);
+	text-align: center;
+}
+
+.section-title hr {
+	background-color: var(--primary-color);
+	height: 4px;
+	width: 180px;
+	border: none;
+	margin-bottom: 32px;
+}
+
+@media screen and (min-width: 728px) {
+	.section-title h2 {
+		font-size: 32px;
+	}
 }
