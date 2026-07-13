@@ -14,6 +14,14 @@ a.logo {
 	height: 64px;
 }
 
+.img-mobile {
+	display: block;
+}
+
+.img-desktop {
+	display: none;
+}
+
 nav.menu-navbar {
 	display: none;
 }
@@ -42,8 +50,12 @@ input.menu-open-input:checked ~ nav.menu-navbar {
 	color: var(--text-secondary-color);
 	font-weight: var(--navbar-text-font-weight);
 	font-size: 24px;
+	transition: color 0.15s;
 }
 
+.list-links li a:hover {
+	color: var(--primary-color);
+}
 @media screen and (min-width: 768px) {
 	.manu-area {
 		margin-top: 0;
@@ -63,5 +75,27 @@ input.menu-open-input:checked ~ nav.menu-navbar {
 	}
 	ul.list-links li {
 		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	a.logo {
+		width: 260px;
+		height: 64px;
+	}
+	.img-mobile {
+		display: none;
+	}
+	.img-desktop {
+		display: block;
+	}
+	header {
+		padding-inline: 120px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	header {
+		padding-inline: 160px;
 	}
 }
