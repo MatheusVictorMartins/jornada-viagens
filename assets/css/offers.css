@@ -10,11 +10,27 @@
 	width: 312px;
 	height: 288px;
 	box-sizing: border-box;
-	background: url("/assets/img/offer_tokyo_card_foto.jpg") no-repeat;
-	background-size: cover;
+
 	padding: 24px 16px;
 	border-radius: 16px;
 	text-align: center;
+}
+
+.offer-card.offer-card-japao {
+	background: url("/assets/img/offer_tokyo_card_foto.jpg") no-repeat;
+	background-size: cover;
+}
+.offer-card.offer-card-san-andreas {
+	background: url("/assets/img/offer_san_andreas_card_foto.jpg") no-repeat;
+	background-size: cover;
+}
+.offer-card.offer-card-paraiba {
+	background: url("/assets/img/offer_paraiba_card_foto.jpg") no-repeat;
+	background-size: cover;
+}
+.offer-card.offer-card-manaus {
+	background: url("/assets/img/offer_manaus_card_foto.jpg") no-repeat;
+	background-size: cover;
 }
 
 .offer-card header {
@@ -42,9 +58,17 @@
 	font-weight: var(--body-text-font-weight);
 }
 
+@media screen and (min-width: 768px) {
+	.offer-cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.offer-card {
-		width: 588px;
+		width: 420px;
 		height: 308px;
 	}
 	.offer-card header h3 {
@@ -52,5 +76,19 @@
 	}
 	.offer-card header span {
 		font-size: 40px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.offer-card {
+		width: 588px;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.offer-cards {
+		justify-content: center;
+		width: 1250px;
+		margin-inline: auto;
 	}
 }
