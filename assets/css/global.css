@@ -1,10 +1,18 @@
 @font-face {
 	font-family: "Montserrat";
 	src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 :root {
 	/* General */
 	--primary-color: #8f0101;
@@ -34,10 +42,57 @@
 
 body {
 	font-family: "Montserrat";
+	color: var(--text-primary-color);
 }
 
 h1 {
 	font-family: "Montserrat";
 	font-weight: var(--title-text-font-weight);
 	color: var(--button-primary-color);
+}
+
+.section-title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+
+.section-title h2 {
+	font-size: 28px;
+	font-weight: var(--title-text-font-weight);
+	text-align: center;
+}
+
+.section-title hr {
+	background-color: var(--primary-color);
+	height: 4px;
+	width: 180px;
+	border: none;
+	margin-bottom: 32px;
+}
+
+a.link-button {
+	display: inline-block;
+	width: 280px;
+	height: 64px;
+	text-decoration: none;
+	color: var(--text-secondary-color);
+	font-weight: var(--title-text-font-weight);
+	font-size: 20px;
+	background-color: var(--secondary-color);
+	border-radius: 16px;
+	line-height: 64px;
+}
+
+@media screen and (min-width: 728px) {
+	.section-title h2 {
+		font-size: 32px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	a.link-button:hover {
+		background-color: var(--primary-color);
+	}
 }
