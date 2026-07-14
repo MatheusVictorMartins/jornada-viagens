@@ -18,6 +18,8 @@
 	gap: 24px;
 	border-radius: 8px;
 	background-color: var(--background-secondary-color);
+	text-decoration: none;
+	color: var(--text-primary-color);
 }
 
 .categoria-card h3 {
