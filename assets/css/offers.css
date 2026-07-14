@@ -6,7 +6,6 @@
 	background: url("/assets/img/offer_tokyo_card_foto.jpg") no-repeat;
 	background-size: cover;
 	padding: 24px 16px;
-	gap: 24px;
 	border-radius: 16px;
 	text-align: center;
 }
@@ -15,15 +14,18 @@
 	display: block;
 	background-color: transparent;
 	position: static;
+	padding: 0;
+	margin-bottom: 24px;
 }
 
 .offer-card header h3 {
 	margin-top: 8px;
 	font-size: 40px;
+	font-weight: var(--title-text-font-weight);
 }
 
-.offer-card header h3 span.price-text {
-	display: inline-block;
+.offer-card header span {
+	display: block;
 	margin-top: 24px;
 	font-size: 32px;
 }
