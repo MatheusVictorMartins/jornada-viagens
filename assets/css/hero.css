@@ -8,7 +8,7 @@ div.hero-img {
 .hero h2 {
 	font-weight: var(--body-text-font-weight);
 	text-align: center;
-	padding: 88px 24px;
+	padding: 88px 24px 0px 24px;
 	font-size: 20px;
 	margin: 0px;
 	line-height: 1.5;
@@ -22,7 +22,7 @@ div.hero-img {
 		background-size: cover;
 	}
 	.hero h2 {
-		padding: 88px 60px;
+		padding: 88px 60px 0px 60px;
 		font-size: 32px;
 	}
 }
@@ -34,12 +34,12 @@ div.hero-img {
 		background-size: cover;
 	}
 	.hero h2 {
-		padding: 104px 120px;
+		padding: 104px 120px 0px 120px;
 	}
 }
 
 @media screen and (min-width: 1920px) {
 	.hero h2 {
-		padding: 104px 160px;
+		padding: 104px 160px 0px 160px;
 	}
 }

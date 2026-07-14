@@ -1,0 +1,25 @@
+.categoria-cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+	text-align: center;
+}
+
+.categoria-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 312px;
+	height: 220px;
+	padding: 41px 16px;
+	gap: 24px;
+	border-radius: 8px;
+	background-color: var(--background-secondary-color);
+}
+
+.categoria-card h3 {
+	font-size: 28px;
+}
+
