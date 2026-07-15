@@ -45,6 +45,11 @@ body {
 	color: var(--text-primary-color);
 }
 
+section {
+	width: 312px;
+	margin-inline: auto;
+}
+
 h1 {
 	font-family: "Montserrat";
 	font-weight: var(--title-text-font-weight);
@@ -74,8 +79,9 @@ h1 {
 }
 
 a.link-button {
-	display: inline-block;
-	width: 280px;
+	display: inline-flex;
+	justify-content: center;
+	min-width: 280px;
 	height: 64px;
 	text-decoration: none;
 	color: var(--text-secondary-color);
@@ -87,21 +93,29 @@ a.link-button {
 }
 
 article header {
-	display: block;
-	background-color: transparent;
-	position: static;
-	padding: 0;
 	margin-bottom: 24px;
 }
 
 @media screen and (min-width: 728px) {
+	section {
+		width: 648px;
+	}
 	.section-title h2 {
 		font-size: 32px;
 	}
 }
 
 @media screen and (min-width: 1024px) {
+	section {
+		width: 900px;
+	}
 	a.link-button:hover {
 		background-color: var(--primary-color);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	section {
+		width: 1200px;
 	}
 }
