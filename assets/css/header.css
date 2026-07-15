@@ -1,4 +1,4 @@
-header {
+header.main-header {
 	background-color: var(--background-tertiary-color);
 	position: relative;
 
@@ -90,13 +90,13 @@ input.menu-open-input:checked ~ nav.menu-navbar {
 	.img-desktop {
 		display: block;
 	}
-	header {
+	header.main-header {
 		padding-inline: 120px;
 	}
 }
 
 @media screen and (min-width: 1920px) {
-	header {
+	header.main-header {
 		padding-inline: 160px;
 	}
 }

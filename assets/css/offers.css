@@ -33,14 +33,6 @@
 	background-size: cover;
 }
 
-.offer-card header {
-	display: block;
-	background-color: transparent;
-	position: static;
-	padding: 0;
-	margin-bottom: 24px;
-}
-
 .offer-card header h3 {
 	margin-top: 8px;
 	font-size: 40px;
