@@ -1,0 +1,9 @@
+section.popular-destination div.section-title {
+	width: 280px;
+	margin-inline: auto;
+}
+
+div.destinations-items article.destination-item header {
+	display: flex;
+	flex-direction: column;
+}

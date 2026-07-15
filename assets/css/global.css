@@ -86,6 +86,14 @@ a.link-button {
 	line-height: 64px;
 }
 
+article header {
+	display: block;
+	background-color: transparent;
+	position: static;
+	padding: 0;
+	margin-bottom: 24px;
+}
+
 @media screen and (min-width: 728px) {
 	.section-title h2 {
 		font-size: 32px;
