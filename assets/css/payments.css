@@ -1,0 +1,25 @@
+.text-content h3 {
+	font-size: 28px;
+}
+
+.text-content p {
+	font-size: 20px;
+}
+
+.text-content {
+	margin-bottom: 24px;
+}
+
+.image-content div.bag {
+	width: 144px;
+	background: url("/assets/img/payments_bag_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
+.image-content div.image.passport {
+	background: url("/assets/img/payments_passport_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
+.image-content div.image.bridge {
+	background: url("/assets/img/payments_bridge_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
