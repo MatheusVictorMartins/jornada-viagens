@@ -56,6 +56,17 @@ h1 {
 	color: var(--button-primary-color);
 }
 
+.content-title {
+	font-size: 28px;
+	font-weight: var(--title-text-font-weight);
+}
+
+.content-text {
+	font-size: 20px;
+	font-weight: var(--body-text-font-weight);
+	line-height: 32px;
+}
+
 .section-title {
 	display: flex;
 	flex-direction: column;

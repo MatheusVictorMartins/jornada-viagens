@@ -1,25 +1,33 @@
-.text-content h3 {
-	font-size: 28px;
-}
-
-.text-content p {
-	font-size: 20px;
+section.payments div.text-content h3 {
+	margin-bottom: 24px;
 }
 
 .text-content {
 	margin-bottom: 24px;
 }
 
+.image-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 24px;
+	grid-template-areas: "bag passport" "bridge bridge";
+}
+
 .image-content div.bag {
+	grid-area: bag;
 	width: 144px;
+	height: 254px;
 	background: url("/assets/img/payments_bag_foto_mobile.jpg") no-repeat;
 	background-size: cover;
 }
 .image-content div.image.passport {
+	grid-area: passport;
 	background: url("/assets/img/payments_passport_foto_mobile.jpg") no-repeat;
 	background-size: cover;
 }
 .image-content div.image.bridge {
+	grid-area: bridge;
 	background: url("/assets/img/payments_bridge_foto_mobile.jpg") no-repeat;
 	background-size: cover;
 }
