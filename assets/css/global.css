@@ -107,7 +107,7 @@ article header {
 	margin-bottom: 24px;
 }
 
-@media screen and (min-width: 728px) {
+@media screen and (min-width: 768px) {
 	section {
 		width: 648px;
 	}
@@ -125,7 +125,7 @@ article header {
 	}
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 	section {
 		width: 1200px;
 	}

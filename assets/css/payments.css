@@ -10,24 +10,59 @@ section.payments div.text-content h3 {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
+	height: 460px;
 	gap: 24px;
 	grid-template-areas: "bag passport" "bridge bridge";
 }
 
-.image-content div.bag {
+.image-content div.first {
 	grid-area: bag;
-	width: 144px;
-	height: 254px;
 	background: url("/assets/img/payments_bag_foto_mobile.jpg") no-repeat;
 	background-size: cover;
 }
-.image-content div.image.passport {
+.image-content div.second {
 	grid-area: passport;
 	background: url("/assets/img/payments_passport_foto_mobile.jpg") no-repeat;
 	background-size: cover;
 }
-.image-content div.image.bridge {
+.image-content div.thirdy {
 	grid-area: bridge;
 	background: url("/assets/img/payments_bridge_foto_mobile.jpg") no-repeat;
 	background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+	.image-content div.first {
+		grid-area: bag;
+		background: url("/assets/img/payments_bag_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+	.image-content div.second {
+		grid-area: passport;
+		background: url("/assets/img/payments_passport_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+	.image-content div.thirdy {
+		grid-area: bridge;
+		background: url("/assets/img/payments_bridge_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.image-content div.first {
+		grid-area: bag;
+		background: url("/assets/img/payments_bag_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
+	.image-content div.second {
+		grid-area: passport;
+		background: url("/assets/img/payments_passport_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
+	.image-content div.thirdy {
+		grid-area: bridge;
+		background: url("/assets/img/payments_bridge_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
 }
