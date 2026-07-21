@@ -1,0 +1,32 @@
+.testimonials .content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.testimonials .testimonial {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.testimonials .testimonial .testimonial-user {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	column-gap: 24px;
+}
+
+.testimonials .testimonial .testimonial-user .row-span-2 {
+	grid-row: span 2;
+}
+
+.testimonials .testimonial .content-text {
+	font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+	.testimonials .content-container {
+		flex-direction: row;
+		gap: 24px;
+	}
+}
