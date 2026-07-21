@@ -1,0 +1,73 @@
+section.payments div.text-content h3 {
+	margin-bottom: 24px;
+}
+
+.payments .content-container {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.payments .image-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 460px;
+	gap: 24px;
+	width: 100%;
+}
+
+.payments .image-content div.first {
+	background: url("/assets/img/payments_bag_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
+.payments .image-content div.second {
+	background: url("/assets/img/payments_passport_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
+.payments .image-content div.thirdy {
+	background: url("/assets/img/payments_bridge_foto_mobile.jpg") no-repeat;
+	background-size: cover;
+}
+
+.payments .image-content .col-span-2 {
+	grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+	.payments .image-content div.first {
+		background: url("/assets/img/payments_bag_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+	.payments .image-content div.second {
+		background: url("/assets/img/payments_passport_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+	.payments .image-content div.thirdy {
+		background: url("/assets/img/payments_bridge_foto_tablet.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.payments .image-content div.first {
+		background: url("/assets/img/payments_bag_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
+	.payments .image-content div.second {
+		background: url("/assets/img/payments_passport_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
+	.payments .image-content div.thirdy {
+		background: url("/assets/img/payments_bridge_foto_desktop.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.payments .content-container {
+		flex-direction: row;
+	}
+	.payments .text-content {
+		max-width: 384px;
+	}
+}

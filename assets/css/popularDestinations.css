@@ -18,12 +18,7 @@ article.destination-item {
 }
 
 .destination-item-header h4 {
-	font-size: 28px;
 	margin-block: 24px;
-}
-
-.destination-item-header p {
-	font-size: 20px;
 }
 
 .destination-item a.link-button {
